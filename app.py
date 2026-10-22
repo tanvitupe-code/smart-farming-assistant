@@ -219,6 +219,5 @@ if st.button("🧠 Generate AI farming decision", type="primary", use_container_
         except Exception as exc:
             st.error("The AI request failed. Check the API key, model availability, and app logs.")
             st.caption(f"Technical detail: {type(exc).__name__}")
-
 st.divider()
 st.caption("AI output can be inaccurate. Verify crop, soil, irrigation and market decisions with local agricultural experts and official sources.")
