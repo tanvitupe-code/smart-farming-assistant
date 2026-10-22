@@ -201,7 +201,7 @@ if st.button("🧠 Generate AI farming decision", type="primary", use_container_
             client = genai.Client(api_key=api_key)
             with st.spinner("AI is reviewing your farm details..."):
                 response = client.models.generate_content(
-                    model=os.getenv("GEMINI_MODEL", "gemini-2.5-flash"),
+                    model=os.getenv("GEMINI_MODEL", "gemini-3.8-flash"),
                     contents=prompt,
                 )
             answer = (getattr(response, "text", None) or "").strip()
